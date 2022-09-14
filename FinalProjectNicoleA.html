@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicole's Traveling Blog ✈</title>
+    <style>
+      h1 {
+        padding: 20px 0px 0px 0px;
+        text-align: center;
+        font-size: 32px;
+        text-shadow: 0 0 2px #000000;
+        color: #f7c9a5;
+
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      h2 {
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      p {
+        text-align: left;
+        line-height: 1.5;
+        padding: 15px 15px 15px 15px;
+        font-size: 18px;
+        margin: 0px 20px 0px 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(253, 239, 132) 0%,
+          rgb(247, 198, 169) 54.2%,
+          rgb(21, 186, 196) 100.3%
+        );
+        width: 70%;
+        margin: 50px auto;
+      }
+      img {
+        max-width: 75%;
+        size: 45px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+        border: #000000;
+      }
+      button {
+        font-size: 18px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        padding: 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        display: block;
+        background: #ff8153;
+        transition: 200ms ease-in-out;
+        margin: 0 auto;
+        box-shadow: 2px 2px 2px #000000;
+      }
+
+      hr {
+        text-align: center;
+        margin: 0px 25px 0px 25px;
+      }
+      button:hover {
+        color: #ff8153;
+        cursor: pointer;
+        background: rgb(247, 198, 169) 54.2%;
+      }
+
+      .container {
+        padding: 15px auto;
+        margin: 20px auto;
+        border-radius: 10px;
+        background: #9fd3c7;
+        max-width: 80%;
+      }
+
+      .andes {
+        text-decoration: none;
+        color: #ff8153;
+        font-size: 18px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .andes:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 14px;
+        padding: 10px 0px 20px 0px;
+      }
+      .chile {
+        font-weight: bold;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Nicole's Traveling Blog ✈</h1>
+      <h2>Part I</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/323/original/theandes.PNG?1662214392"
+        alt="andesmountain"
+      />
+      <p>
+        <span class="chile">Chile</span>, a country located in the most southern
+        part of South America, a place where the summer is wintertime which is
+        the opposite of how it is in the United States, I've come to find that
+        it is not something that people understand when you tell them this, for
+        a lot of people it doesn't make sense when something is different from
+        what they've always known. That is why it is so important to travel and
+        get to experience other cultures and ways of living- even climates!
+        <br />
+        <br />
+        This past summer I visited Chile, coming from the US seemed so far away
+        and the trip felt incredibly long and tiring. I was happy to leave the
+        sunshine of summer to go to the winter, don't get me wrong. Never
+        thought after living in the US that I would experience a cold summer. It
+        was truly amazing, getting to know a new city and new people. I was
+        amazed to see how beautiful the Cordillera of the Andes was hugging the
+        whole city of Santiago, I would recommend everyone to go to Chile just
+        to see this, it is something almost unreal and overwhelming, as though
+        it wasn't really there and you are just imagining things, although I
+        could have never come up with something that beautiful in my mind.
+        <br />
+
+        <a
+          href="https://en.wikipedia.org/wiki/Andes"
+          target="_blank"
+          class="andes"
+          ><em>Learn more about the Andes!</em></a
+        >
+      </p>
+      <button class="hearmore">Sign up to read part II!</button>
+      <br />
+      <hr />
+      <p class="footer">Page made by <strong> Nicole Aponte</strong></p>
+    </div>
+    <script>
+      function signup() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?📧");
+        let language = prompt("What language do you speak?");
+        language = language.toUpperCase();
+        if (
+          language === "SPANISH" ||
+          language === "ESPANOL" ||
+          language === "ESPAÑOL"
+        ) {
+          alert(
+            `Gracias por suscribirte ${name}, te enviaremos un correo muy pronto!`
+          );
+        } else
+          alert(
+            `Thank you for signing up ${name}, you will get an email shortly with more information!`
+          );
+      }
+
+      let signupButton = document.querySelector("button");
+      signupButton.addEventListener("click", signup);
+    </script>
+  </body>
+</html>
